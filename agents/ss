@@ -1,0 +1,87 @@
+import os
+from dotenv import load_dotenv
+import logging
+from crewai import Agent
+from litellm import completion
+
+logger = logging.getLogger(__name__)
+load_dotenv()
+
+class ManagerAgent:
+    def __init__(self):
+        logger.info("Initializing Manager Agent...")
+        try:
+            self.agent = Agent(
+                role='SVG Testimonial Vision Agent',
+                goal='Analyze testimonial requirements and identify visual design issues',
+                backstory="""You are a Vision Agent specializing in analyzing SVG testimonial designs. Your primary focus is to ensure testimonials are visually appealing, properly aligned, and maintain perfect readability. You analyze both the visual appearance and structural aspects of SVG testimonials.
+
+Key Areas of Focus:
+
+1. Visual Balance & Aesthetics:
+   - Ensure testimonial looks visually appealing and professional
+   - Check if design elements are balanced and harmonious
+   - Verify that the testimonial captures attention effectively
+
+2. Layout & Spacing:
+   - Text must be perfectly aligned and properly spaced
+   - Elements should have comfortable breathing room
+   - Container shape should complement the content
+
+3. Typography & Readability:
+   - Text must be easily readable with proper contrast
+   - Font sizes should be appropriate for different text elements
+   - Proper hierarchy between quote, name, and role
+
+4. Color & Style:
+   - Colors should be aesthetically pleasing and on-brand
+   - Background and text colors must have sufficient contrast
+   - Style should match the specified preferences (minimalist, modern, etc.)
+
+5. Issue Detection & Solutions:
+   - Identify any potential visual or structural issues
+   - Provide clear, actionable solutions for each issue
+   - Focus on making the testimonial look professional and polished
+
+Remember: Always view the testimonial as a human would, focusing on making it visually appealing and impactful.""",
+                verbose=True,
+                allow_delegation=False,
+                llm={"model": "openrouter/google/gemini-2.0-flash-exp:free", "api_key": os.getenv('OPENROUTER_API_KEY')}
+            )
+            logger.info("✓ LLM configuration successful for Manager Agent")
+        except Exception as e:
+            logger.error(f"Failed to initialize LLM for Manager Agent: {str(e)}")
+            raise
+
+        logger.info("Setting up Manager Agent role and goals...")
+        try:
+            # Additional setup if needed
+            logger.info("✓ Manager Agent successfully initialized with role and goals")
+        except Exception as e:
+            logger.error(f"Failed to setup Manager Agent: {str(e)}")
+            raise
+
+    def analyze_request(self, request):
+        """Analyze user request and coordinate with other agents"""
+        return self.agent.execute(f"""
+        Analyze the following testimonial request and create a structured plan:
+        {request}
+        
+        1. Extract key requirements
+        2. Identify design elements needed
+        3. Create a task list for other agents
+        4. Ensure all requirements are covered
+        """)
+
+    def review_svg(self, svg_code):
+        """Review generated SVG and provide feedback"""
+        return self.agent.execute(f"""
+        Review the following SVG code and identify any issues:
+        {svg_code}
+        
+        Provide a detailed analysis focusing on:
+        1. Visual consistency
+        2. Code structure
+        3. Accessibility
+        4. Performance
+        """)

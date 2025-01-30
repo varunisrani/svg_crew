@@ -1,0 +1,5 @@
+2025-01-31 01:53:47,588 - process - INFO - Starting testimonial generation process...
+2025-01-31 01:53:47,589 - process - INFO - Received request: {
+  "user_prompt": "'Create a modern testimonial with a 5-star rating for John Doe, CEO of TechCorp, who said \"This product changed everything!\"",
+  "timestamp": "2025-01-31T01:53:47.578994"
+}
