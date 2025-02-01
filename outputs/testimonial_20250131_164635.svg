@@ -1,0 +1,36 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-label="Customer Testimonial" role="img">
+  <!-- Soft pink background -->
+  <rect width="1080" height="1080" fill="#FFC0CB"/>
+
+  <!-- Circular decoration -->
+  <circle cx="540" cy="220" r="40" fill="#FFFFFF" stroke="#000000" stroke-width="2" aria-label="Decoration"/>
+
+  <!-- Horizontal line decoration -->
+  <line x1="200" y1="250" x2="880" y2="250" stroke="#000000" stroke-width="1" aria-label="Separator Line"/>
+
+  <!-- Testimonial container with padding -->
+  <rect x="200" y="250" width="680" height="420" rx="20" ry="20" fill="#FFFFFF" aria-label="Testimonial Container"/>
+
+  <!-- Testimonial text -->
+  <text x="540" y="350"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="22"
+        fill="#000000"
+        text-anchor="middle">
+    <tspan x="540" dy="0">"This product has exceeded my expectations!</tspan>
+    <tspan x="540" dy="25">The quality is outstanding and the service</tspan>
+    <tspan x="540" dy="25">was exceptional. I will definitely recommend it!"</tspan>
+  </text>
+
+  <!-- Customer name -->
+  <text x="540" y="490"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="24"
+        font-weight="bold"
+        fill="#000000"
+        text-anchor="middle">
+    John Doe
+  </text>
+</svg>
+```

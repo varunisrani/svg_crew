@@ -1,0 +1,41 @@
+```xml
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Client Testimonial Graphic</title>
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1A78" stop-opacity="1" />
+      <stop offset="100%" stop-color="#3E8CBB" stop-opacity="1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="10" flood-color="rgba(0,0,0,0.1)" />
+    </filter>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#grad1)" />
+  
+  <text x="540" y="100" font-family="Montserrat" font-size="42" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    What Our Clients Say
+  </text>
+
+  <g>
+    <rect x="100" y="180" width="800" height="400" rx="15" ry="15" fill="#F9F9F9" filter="url(#shadow)" />
+    <text x="290" y="240" font-family="Playfair Display" font-size="28" fill="#333333">
+      <tspan dy="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do</tspan>
+      <tspan dy="35">eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</tspan>
+      <tspan dy="35">minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</tspan>
+      <tspan dy="35">ex ea commodo consequat.</tspan>
+    </text>
+
+    <text x="120" y="220" font-family="Playfair Display" font-size="80" fill="#FFD700">&ldquo;</text>
+    <text x="820" y="260" font-family="Playfair Display" font-size="80" fill="#FFD700">&rdquo;</text>
+
+    <circle cx="820" cy="260" r="80" fill="#F9F9F9" stroke="#333333" stroke-width="4" />
+    
+    <text x="650" y="500" font-family="Playfair Display" font-size="24" font-style="italic" fill="#555555">
+      Nicolas Lopez
+    </text>
+    <text x="650" y="540" font-family="Playfair Display" font-size="20" fill="#444444">
+      Product Manager
+    </text>
+  </g>
+</svg>
+```

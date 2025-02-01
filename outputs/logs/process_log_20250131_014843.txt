@@ -1,5 +1,0 @@
-2025-01-31 01:48:43,697 - process - INFO - Starting testimonial generation process...
-2025-01-31 01:48:43,698 - process - INFO - Received request: {
-  "user_prompt": "Create a testimonial with a soft pink background and black text for Emily Chen, Product Manager at InnovateTech, who said \"The platform's intuitive design transformed our workflow completely!\" with a 4.5-star rating. Use a circular container with minimalist style and perfect alignment for the text.",
-  "timestamp": "2025-01-31T01:48:43.692856"
-}

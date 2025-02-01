@@ -1,0 +1,57 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+  <title id="title">Testimonials</title>
+  <!-- Beige background -->
+  <rect width="1080" height="1080" fill="#E8E1D9"/>
+  
+  <!-- Title -->
+  <text x="540" y="150" 
+        font-family="Arial Black, sans-serif" 
+        font-size="90" 
+        text-anchor="middle" 
+        fill="#9B4F3E">
+    Testimonials
+  </text>
+  
+  <!-- Decorative circle -->
+  <circle cx="540" cy="300" r="80" fill="#9B4F3E"/>
+  
+  <!-- Testimonial container -->
+  <rect x="100" y="400" 
+        width="880" height="400" 
+        rx="20" ry="20" 
+        fill="#FFFFFF"/>
+  
+  <!-- Review text -->
+  <text x="540" y="490" 
+        font-family="Georgia, serif" 
+        font-size="36" 
+        fill="#000000" 
+        text-anchor="middle">
+    <tspan x="540" dy="0">"This service was exceptional!</tspan>
+    <tspan x="540" dy="50">I am absolutely thrilled with the</tspan>
+    <tspan x="540" dy="50">results and the attention to detail.</tspan>
+    <tspan x="540" dy="50">Highly recommend to anyone seeking</tspan>
+    <tspan x="540" dy="50">professional service and quality."</tspan>
+  </text>
+  
+  <!-- Author name -->
+  <text x="540" y="750" 
+        font-family="Arial, sans-serif" 
+        font-size="48" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="#9B4F3E">
+    Alex Johnson
+  </text>
+  
+  <!-- Author designation -->
+  <text x="540" y="800" 
+        font-family="Arial, sans-serif" 
+        font-size="40" 
+        text-anchor="middle" 
+        fill="#9B4F3E">
+    Client
+  </text>
+</svg>
+```

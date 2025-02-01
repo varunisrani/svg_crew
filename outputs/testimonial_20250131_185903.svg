@@ -1,0 +1,48 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-label="Client Testimonial" role="img">
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#65A7A1"/>
+
+  <!-- Title -->
+  <text x="540" y="150" font-family="Arial Black, sans-serif" font-size="100" text-anchor="middle" fill="#F5EBE4">
+    CLIENT
+    <tspan x="540" dy="120">TESTIMONIAL</tspan>
+  </text>
+
+  <!-- Testimonial Container -->
+  <rect x="100" y="300" width="880" height="600" rx="40" ry="40" fill="#F5EBE4"/>
+
+  <!-- Author Name -->
+  <text x="540" y="500" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#65A7A1">
+    John Doe
+  </text>
+
+  <!-- Star Rating -->
+  <g transform="translate(540, 540)">
+    <g fill="#FFA500">
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="scale(0.8)"/>
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(50,0) scale(0.8)"/>
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(100,0) scale(0.8)"/>
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(150,0) scale(0.8)"/>
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(200,0) scale(0.8)"/>
+    </g>
+  </g>
+
+  <!-- Testimonial Text -->
+  <text x="540" y="620" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#65A7A1">
+    <tspan x="540" dy="0">I had an amazing experience with</tspan>
+    <tspan x="540" dy="40">this service! They were attentive to</tspan>
+    <tspan x="540" dy="40">my needs and went above and beyond</tspan>
+    <tspan x="540" dy="40">to ensure everything was perfect.</tspan>
+    <tspan x="540" dy="40">Highly recommended!</tspan>
+  </text>
+
+  <!-- Divider Line -->
+  <line x1="100" y1="920" x2="980" y2="920" stroke="#F5EBE4" stroke-width="5"/>
+
+  <!-- Website URL -->
+  <text x="540" y="980" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#F5EBE4">
+    www.testimonial-website.com
+  </text>
+</svg>
+```

@@ -1,0 +1,11 @@
+TYPOGRAPHY = {
+    "sans_serif": ["Arial", "Open Sans", "Poppins"],
+    "serif": ["Georgia", "Playfair Display", "Times New Roman"],
+    "bold": ["Arial Black", "Impact"],
+    "sizes": {
+        "body": "36-48px",
+        "title": "80-120px"
+    },
+    "alignment": "text-anchor=\"middle\"",
+    "line_spacing": "50-60px"
+} 

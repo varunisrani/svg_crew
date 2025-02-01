@@ -1,0 +1,37 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-label="Testimonial Design" role="img">
+  <!-- Navy blue background -->
+  <rect width="1080" height="1080" fill="#001f3f"/>
+
+  <!-- Title -->
+  <text x="540" y="150"
+        font-family="Georgia, serif"
+        font-size="72"
+        font-weight="bold"
+        fill="#ffffff"
+        text-anchor="middle">
+    Testimonial
+  </text>
+
+  <!-- Testimonial container with border -->
+  <rect x="150" y="250"
+        width="780" height="400"
+        rx="10" ry="10"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="2"/>
+
+  <!-- Testimonial text and client info grouped -->
+  <g fill="#ffffff" text-anchor="middle" font-family="Georgia, serif">
+    <text x="540" y="370" font-size="24" line-height="1.5">
+      "A positive review from a marketing consultant"
+    </text>
+    <text x="540" y="450" font-size="18" font-weight="bold">
+      John Doe, Marketing Consultant
+    </text>
+    <text x="540" y="480" font-size="16">
+      October 2023
+    </text>
+  </g>
+</svg>
+```

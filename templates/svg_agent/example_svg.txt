@@ -1,0 +1,5 @@
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg">
+    <!-- Light blue background -->
+    <rect width="1080" height="1080" fill="#87CEFA"/>
+    <!-- ... rest of your example SVG ... -->
+</svg> 

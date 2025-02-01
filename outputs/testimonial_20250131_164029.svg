@@ -1,0 +1,37 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title">
+  <title id="title">Customer Testimonial Design</title>
+  <!-- Navy blue background -->
+  <rect width="1080" height="1080" fill="#001F3F"/>
+
+  <!-- Title -->
+  <text x="540" y="80" 
+        font-family="Georgia, serif" 
+        font-size="24" 
+        font-weight="bold" 
+        fill="#FFFFFF" 
+        text-anchor="middle">
+    Customer Testimonial
+  </text>
+
+  <!-- Testimonial container -->
+  <rect x="310" y="100" 
+        width="460" height="320" 
+        rx="10" ry="10" 
+        fill="none" 
+        stroke="#FFD700" 
+        stroke-width="2"/>
+
+  <!-- Review text -->
+  <text x="540" y="150" 
+        font-family="Arial, sans-serif" 
+        font-size="16" 
+        fill="#FFFFFF" 
+        text-anchor="middle">
+    <tspan dy="0">"This elegant testimonial design features a rich navy blue background.</tspan>
+    <tspan dy="25">The title is styled using a bold serif font ensuring high contrast.</tspan>
+    <tspan dy="25">The main container is centrally aligned to provide a balanced layout.</tspan>
+    <tspan dy="25">The body text utilizes a clean sans-serif font for clarity."</tspan>
+  </text>
+</svg>
+```

@@ -1,6 +1,7 @@
 crewai
 crewai[tools]
-openai
+langchain-google-genai
 python-dotenv
 cairosvg
 Pillow
+aiohttp

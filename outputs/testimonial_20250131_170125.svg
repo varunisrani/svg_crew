@@ -1,0 +1,65 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-label="Client Testimonials" role="img">
+  <!-- Beige background -->
+  <rect width="1080" height="1080" fill="#E8E1D9"/>
+
+  <!-- Title -->
+  <text x="540" y="150"
+        font-family="Arial Black, sans-serif"
+        font-size="96"
+        text-anchor="middle"
+        fill="#9B4F3E">
+    Client Testimonials
+  </text>
+
+  <!-- Rounded rectangle container for review -->
+  <rect x="90" y="240"
+        width="900" height="500"
+        rx="30" ry="30"
+        fill="#FFFFFF"/>
+
+  <!-- Testimonial text -->
+  <text x="540" y="350"
+        font-family="Times New Roman, serif"
+        font-size="36"
+        text-anchor="middle"
+        fill="#000000">
+    <tspan x="540" dy="0">"The service provided by this company</tspan>
+    <tspan x="540" dy="30">was absolutely fantastic! They went</tspan>
+    <tspan x="540" dy="30">above and beyond to meet my needs.</tspan>
+    <tspan x="540" dy="30">I highly recommend them!"</tspan>
+  </text>
+
+  <!-- Author name -->
+  <text x="540" y="550"
+        font-family="Arial, sans-serif"
+        font-size="36"
+        font-weight="bold"
+        text-anchor="middle"
+        fill="#9B4F3E">
+    - Sarah Johnson
+  </text>
+
+  <!-- Decorative elements: quotation marks -->
+  <text x="80" y="370"
+        font-family="Arial, sans-serif"
+        font-size="72"
+        fill="#9B4F3E">"</text>
+  <text x="1000" y="370"
+        font-family="Arial, sans-serif"
+        font-size="72"
+        fill="#9B4F3E">"</text>
+
+  <!-- Bottom decorative line -->
+  <line x1="90" y1="780" x2="990" y2="780" stroke="#9B4F3E" stroke-width="2"/>
+
+  <!-- Website URL -->
+  <text x="540" y="830"
+        font-family="Arial, sans-serif"
+        font-size="28"
+        text-anchor="middle"
+        fill="#000000">
+    www.examplewebsite.com
+  </text>
+</svg>
+```

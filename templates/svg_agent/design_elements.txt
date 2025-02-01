@@ -1,0 +1,8 @@
+DESIGN_ELEMENTS = {
+    "backgrounds": "solid_color",
+    "containers": "geometric",
+    "color_scheme": "two_tone",
+    "typography": "hierarchical",
+    "spacing": "consistent",
+    "accents": "optional"
+} 

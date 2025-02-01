@@ -1,0 +1,35 @@
+```svg
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" style="background-color: white;" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Customer Testimonial</title>
+  <desc id="desc">A testimonial from a customer featuring a product image, Amazon logo, star rating, and a video snippet placeholder.</desc>
+  
+  <style>
+    .text { font-family: Arial, sans-serif; fill: black; }
+    .header-text { font-size: 24px; text-anchor: middle; }
+    .testimonial-text { font-size: 16px; }
+    .author-text { font-size: 14px; fill: gray; font-style: italic; }
+    .rating-text { font-size: 16px; fill: gold; }
+    .video-box { fill: #e5e5e5; }
+    .footer { fill: #FF9900; }
+    .footer-text { font-size: 12px; fill: white; text-anchor: middle; }
+  </style>
+
+  <text x="50%" y="50" class="text header-text">Customer Testimonial</text>
+  <image xlink:href="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" x="260" y="70" height="50" width="80" aria-label="Amazon Logo" />
+  <image xlink:href="product-image-url.jpg" x="50" y="100" height="150" width="150" aria-label="Product Image" />
+
+  <rect x="220" y="100" width="350" height="150" rx="10" ry="10" fill="#f7f7f7" stroke="black" stroke-width="1" />
+  
+  <text x="240" y="130" class="text testimonial-text">
+    "I recently purchased this product from Amazon and it has exceeded my expectations! The quality is fantastic, and I love how easy it is to use. I’ve noticed significant benefits since I started using it, and I highly recommend it to anyone looking for a reliable product."
+  </text>
+  <text x="240" y="170" class="text author-text">- Jane Doe</text>
+  <text x="240" y="190" class="text rating-text">★★★★★</text>
+
+  <rect x="50" y="270" width="500" height="100" rx="10" ry="10" class="video-box" aria-label="Video testimonial placeholder" />
+  <text x="300" y="320" class="text testimonial-text">Click to watch the video testimonial</text>
+
+  <rect x="0" y="380" width="600" height="20" class="footer" />
+  <text x="300" y="395" class="text footer-text">Powered by Amazon</text>
+</svg>
+```

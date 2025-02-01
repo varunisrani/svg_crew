@@ -1,0 +1,53 @@
+```xml
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-labelledby="testimonialTitle" role="img">
+  <!-- Beige background -->
+  <rect width="1080" height="1080" fill="#E8E1D9"/>
+
+  <!-- Title -->
+  <text id="testimonialTitle" x="540" y="100"
+        font-family="Arial Black, sans-serif"
+        font-size="80"
+        text-anchor="middle"
+        fill="#9B4F3E">
+    Client Testimonial
+  </text>
+
+  <!-- Testimonial container -->
+  <rect x="140" y="180"
+        width="800" height="500"
+        rx="30" ry="30"
+        fill="#FFFFFF"/>
+
+  <!-- Testimonial text -->
+  <text x="540" y="290"
+        font-family="Georgia, serif"
+        font-size="36"
+        text-anchor="middle"
+        fill="#000000">
+    <tspan x="540" dy="0">"I had a fantastic experience with</tspan>
+    <tspan x="540" dy="30">this service. The team was attentive</tspan>
+    <tspan x="540" dy="30">and went above and beyond to meet</tspan>
+    <tspan x="540" dy="30">my needs. I highly recommend them!"</tspan>
+  </text>
+
+  <!-- Reviewer name -->
+  <text x="540" y="470"
+        font-family="Arial, sans-serif"
+        font-size="36"
+        font-weight="bold"
+        text-anchor="middle"
+        fill="#9B4F3E">
+    - Sarah Johnson
+  </text>
+
+  <!-- Decorative element: quotation marks -->
+  <text x="200" y="240"
+        font-family="Arial, sans-serif"
+        font-size="60"
+        fill="#9B4F3E">“</text>
+  <text x="880" y="240"
+        font-family="Arial, sans-serif"
+        font-size="60"
+        fill="#9B4F3E">”</text>
+</svg>
+```

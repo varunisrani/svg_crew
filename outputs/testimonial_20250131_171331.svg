@@ -1,0 +1,44 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-label="Client Feedback Testimonial">
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#E8E1D9"/>
+
+  <!-- Title -->
+  <text x="540" y="150" font-family="Arial Black, sans-serif" font-size="80" text-anchor="middle" fill="#9B4F3E">
+    Client Feedback
+  </text>
+
+  <!-- Testimonial container -->
+  <rect x="100" y="220" width="880" height="600" rx="40" ry="40" fill="#FFFFFF" />
+
+  <!-- Testimonial text -->
+  <text x="540" y="300" font-family="Times New Roman, serif" font-size="36" text-anchor="middle" fill="#000000">
+    <tspan x="540" dy="0">"This service exceeded my expectations!</tspan>
+    <tspan x="540" dy="50">The team was professional, attentive, and</tspan>
+    <tspan x="540" dy="50">truly understood my needs. I highly</tspan>
+    <tspan x="540" dy="50">recommend them for anyone looking for</tspan>
+    <tspan x="540" dy="50">quality and reliability."</tspan>
+  </text>
+
+  <!-- Reviewer name -->
+  <text x="540" y="650" font-family="Arial, sans-serif" font-size="32" font-style="italic" text-anchor="middle" fill="#9B4F3E">
+    - Sarah Johnson
+  </text>
+
+  <!-- Star rating -->
+  <g transform="translate(540, 680)">
+    <g fill="#FFD700">
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="scale(0.8)"/>
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(50,0) scale(0.8)"/>
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(100,0) scale(0.8)"/>
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(150,0) scale(0.8)"/>
+      <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(200,0) scale(0.8)"/>
+    </g>
+  </g>
+
+  <!-- Website URL -->
+  <text x="540" y="830" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#9B4F3E">
+    www.sarahjohnsonreviews.com
+  </text>
+</svg>
+```

@@ -1,0 +1,22 @@
+COLOR PALETTES = {
+    "beige_minimal": {
+        "background": "#E8E1D9",
+        "accent": "#9B4F3E"
+    },
+    "teal_modern": {
+        "background": "#65A7A1",
+        "container": "#F5EBE4"
+    },
+    "white_pink": {
+        "background": "#FFFFFF",
+        "circle": "#F3E5F5"
+    },
+    "monochrome": {
+        "background": "#B0B0B0",
+        "container": "#FFFFFF"
+    },
+    "yellow_white": {
+        "background": "#E7B831",
+        "container": "#FFFFFF"
+    }
+} 

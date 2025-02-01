@@ -1,19 +1,16 @@
+from utils.logging_config import setup_logging
+# Setup logging first
+logger = setup_logging()
+
+# Then import other modules
 from crewai import Crew, Task
 from dotenv import load_dotenv
-import logging
 import os
 import time
 from agents.description_agent import DescriptionAgent
 from agents.svg_agent import SVGAgent
 from agents.edit_agent import EditAgent
 from agents.manager_agent import ManagerAgent
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
 
 # Load environment variables
 load_dotenv()
@@ -105,7 +102,7 @@ def main():
         
         # Get user input
         user_request = input("Enter your testimonial requirements: ")
-        logger.info("Starting testimonial creation process...")
+        logger.info("Starting testimonial creation process with user request: %s", user_request)
         
         result = creator.create_testimonial(user_request)
         

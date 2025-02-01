@@ -1,57 +1,56 @@
+from utils.logging_config import setup_logging
 from crewai import Agent, LLM, Task, Crew
 from dotenv import load_dotenv
 import os
-import logging
 import time
 from litellm import RateLimitError
 
 load_dotenv()
 
-logger = logging.getLogger(__name__)
+logger = setup_logging()
 
 class SVGAgent:
     def __init__(self):
-        logger.info("Initializing SVG Generator Agent...")
+        self.logger = setup_logging("svg_agent")
+        self.logger.info("Initializing SVG Generator Agent...")
         try:
             llm = LLM(
-                model="gpt-4o-mini",
+                model="ft:gpt-4o-mini-2024-07-18:personal::ArguXr7z",
                 api_key=os.getenv('OPENAI_API_KEY'),
                 temperature=0.7,
                 max_tokens=2000
             )
-            logger.info("✓ LLM configuration successful for SVG Generator")
+            self.logger.info("✓ LLM configuration successful for SVG Generator")
         except Exception as e:
-            logger.error(f"Failed to initialize LLM for SVG Generator: {str(e)}")
+            self.logger.error(f"Failed to initialize LLM for SVG Generator: {str(e)}")
             raise
         
-        logger.info("Setting up SVG Generator role and goals...")
+        self.logger.info("Setting up SVG Generator role and goals...")
         self.agent = Agent(
             role="SVG Code Generator",
             goal="Generate high-quality SVG code from design descriptions",
-            backstory="""You are an expert SVG developer specialized in 
-            creating beautiful and efficient SVG testimonials from detailed 
-            design descriptions.""",
+            backstory="""You are an SVG code generator assistant. Your goal is to create SVG code based on design descriptions provided by users. Your SVG code should accurately represent the design elements and layout described in the input.""",
             llm=llm,
             verbose=True
         )
-        logger.info("✓ SVG Generator Agent successfully initialized with role and goals")
-
-        self.color_palettes = {
-            'beige_minimalist': {'bg': '#E8E1D9', 'accent': '#9B4F3E'},
-            'teal_modern': {'bg': '#65A7A1', 'container': '#F5EBE4'},
-            'white_pink': {'bg': '#FFFFFF', 'circle': '#F3E5F5'},
-            'monochrome': {'bg': '#B0B0B0', 'container': '#FFFFFF'},
-            'yellow_white': {'bg': '#E7B831', 'container': '#FFFFFF'}
-        }
+        self.logger.info("✓ SVG Generator Agent successfully initialized with role and goals")
 
     def generate_svg(self, description):
         """Generate SVG code based on the description"""
-        logger.info("Starting SVG code generation...")
+        self.logger.info("Starting SVG generation...")
+        self.logger.info(f"Input description: {description}")
         try:
             task = Task(
                 description=f"""
-                Generate SVG code for testimonial based on this description:
+                Generate an SVG testimonial design based on this description:
                 {description}
+
+                Follow these guidelines:
+                1. Canvas size must be 1080x1080px
+                2. Use clean typography and hierarchical text
+                3. Layout must be centered
+                4. Design must be minimal and professional
+                5. SVG code must be valid and commented
                 """,
                 expected_output="Complete SVG code for the testimonial design",
                 agent=self.agent
@@ -62,28 +61,30 @@ class SVGAgent:
                 tasks=[task]
             )
             
-            logger.info("Executing SVG generation task...")
+            self.logger.info("Executing SVG generation task...")
             result = crew.kickoff()
-            logger.info("✓ SVG generation completed successfully")
+            result_str = str(result.raw_output if hasattr(result, 'raw_output') else result)
+            self.logger.info("✓ SVG generation completed successfully")
+            self.logger.info(f"Generated SVG preview: {result_str[:200]}...")
             return result
         except Exception as e:
-            logger.error(f"Error generating SVG: {str(e)}")
+            self.logger.error(f"Error generating SVG: {str(e)}")
             raise
 
     def optimize_svg(self, svg_code):
         """Optimize the SVG code for performance and compatibility"""
-        logger.info("Starting SVG optimization...")
+        self.logger.info("Starting SVG optimization...")
         try:
             task = Task(
                 description=f"""
-                Optimize the following SVG code:
+                Optimize this SVG code for performance and readability:
                 {svg_code}
-                
-                Perform these optimizations:
-                1. Remove unnecessary attributes and elements
+
+                Follow these guidelines:
+                1. Remove unnecessary attributes
                 2. Optimize path data
                 3. Combine similar styles
-                4. Ensure proper grouping
+                4. Group related elements
                 5. Add ARIA labels for accessibility
                 """,
                 expected_output="Optimized SVG code with improved performance and accessibility",
@@ -95,10 +96,10 @@ class SVGAgent:
                 tasks=[task]
             )
             
-            logger.info("Executing SVG optimization task...")
+            self.logger.info("Executing SVG optimization task...")
             result = crew.kickoff()
-            logger.info("✓ SVG optimization completed successfully")
+            self.logger.info("✓ SVG optimization completed successfully")
             return result
         except Exception as e:
-            logger.error(f"Error optimizing SVG: {str(e)}")
+            self.logger.error(f"Error optimizing SVG: {str(e)}")
             raise

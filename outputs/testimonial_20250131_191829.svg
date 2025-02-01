@@ -1,0 +1,25 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Testimonials</title>
+  <rect width="1080" height="1080" fill="#65A7A1"/>
+  <rect x="140" y="300" width="800" height="480" rx="40" ry="40" fill="#F5EBE4"/>
+  <text x="540" y="180" font-family="Poppins, sans-serif" font-size="72" font-weight="bold" fill="#000000" text-anchor="middle">Testimonials</text>
+  <text x="540" y="400" font-family="Open Sans, sans-serif" font-size="36" fill="#000000" text-anchor="middle">
+    <tspan x="540" dy="0">I had an amazing experience with</tspan>
+    <tspan x="540" dy="50">the service provided by the team.</tspan>
+    <tspan x="540" dy="50">They were professional, attentive,</tspan>
+    <tspan x="540" dy="50">and went above and beyond to ensure</tspan>
+    <tspan x="540" dy="50">that I was satisfied every step of the way.</tspan>
+  </text>
+  <text x="540" y="700" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#000000" text-anchor="middle">- Alex Johnson</text>
+  <g transform="translate(360, 750)" fill="#FFD700">
+    <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="scale(0.8)"/>
+    <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(70,0) scale(0.8)"/>
+    <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(140,0) scale(0.8)"/>
+    <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(210,0) scale(0.8)"/>
+    <path d="M0,0 L10,20 L0,40 L20,30 L40,40 L30,20 L40,0 L20,10 Z" transform="translate(280,0) scale(0.8)"/>
+  </g>
+  <line x1="140" y1="290" x2="940" y2="290" stroke="#FFFFFF" stroke-width="5" opacity="0.5"/>
+  <line x1="140" y1="780" x2="940" y2="780" stroke="#FFFFFF" stroke-width="5" opacity="0.5"/>
+</svg>
+```

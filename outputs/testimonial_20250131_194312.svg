@@ -1,0 +1,18 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-label="Testimonial Section">
+  <rect width="1080" height="1080" fill="#000000" />
+  <rect x="180" y="300" width="720" height="600" fill="none" stroke="#00BFFF" stroke-width="5" />
+  <g text-anchor="middle" font-family="Arial" fill="#FFFFFF">
+    <text x="540" y="380" font-size="48" fill="#FFD700">PPT Sharma</text>
+    <text x="540" y="440" font-size="36">AI</text>
+    <text x="540" y="500" font-size="28">
+      <tspan dy="0">I have completed the AI course</tspan>
+      <tspan dy="40">with 100xEngineers and it was an</tspan>
+      <tspan dy="40">incredible experience.</tspan>
+      <tspan dy="40">The materials were easy to understand</tspan>
+      <tspan dy="40">and the teachers were very effective.</tspan>
+    </text>
+    <text x="540" y="700" font-size="36" font-weight="bold">Enroll in 100xEngineers Now!</text>
+  </g>
+</svg>
+```

@@ -1,0 +1,29 @@
+```svg
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+  <title id="title">Customer Feedback</title>
+  <rect width="1080" height="1080" fill="#E8E1D9"/>
+
+  <!-- Main Title -->
+  <text x="540" y="150" font-family="Arial Black, sans-serif" font-size="80" text-anchor="middle" fill="#9B4F3E">Customer Feedback</text>
+
+  <!-- Testimonial Container -->
+  <rect x="100" y="220" width="880" height="480" rx="30" ry="30" fill="#FFFFFF" />
+
+  <!-- Testimonial Text -->
+  <text x="540" y="300" font-family="Georgia, serif" font-size="36" text-anchor="middle" fill="#333333">
+    <tspan x="540" dy="0">"This service exceeded my expectations!</tspan>
+    <tspan x="540" dy="45">The team was professional, efficient,</tspan>
+    <tspan x="540" dy="45">and truly cared about my needs. I</tspan>
+    <tspan x="540" dy="45">would highly recommend them to anyone."</tspan>
+  </text>
+
+  <!-- Client Name -->
+  <text x="540" y="570" font-family="Poppins, sans-serif" font-size="36" text-anchor="middle" fill="#9B4F3E">- Jane Doe</text>
+
+  <!-- Decorative Quote Marks -->
+  <text x="120" y="250" font-family="Arial, sans-serif" font-size="60" fill="#9B4F3E">“</text>
+  <text x="960" y="450" font-family="Arial, sans-serif" font-size="60" fill="#9B4F3E">”</text>
+</svg>
+``` 
+
+This optimized SVG code maintains visual fidelity while improving performance and accessibility, meeting all specified guidelines.

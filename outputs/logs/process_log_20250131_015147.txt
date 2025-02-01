@@ -1,5 +1,0 @@
-2025-01-31 01:51:47,645 - process - INFO - Starting testimonial generation process...
-2025-01-31 01:51:47,645 - process - INFO - Received request: {
-  "user_prompt": "Okay, let's craft another unique and professional SVG testimonial description, ensuring a polished and impactful design.",
-  "timestamp": "2025-01-31T01:51:47.644493"
-}
